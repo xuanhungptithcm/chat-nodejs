@@ -8,11 +8,12 @@ import { Router } from '@angular/router';
   styleUrls: ['./menubar.component.scss']
 })
 export class MenubarComponent implements OnInit {
-  activeClassCss: Number = 0;
   constructor(private localstorage: LocalStorageService,
     private router: Router) { }
   @Output() componentName = new EventEmitter<String>();
+  @Input() navigatePageInput: Number;
   ngOnInit() {
+    this.navigatePageInput = 0;
   }
 
   logout() {
@@ -22,22 +23,23 @@ export class MenubarComponent implements OnInit {
 
   changeComponent(nameComponent) {
     if (nameComponent === 'DASHBOARD') {
-      this.activeClassCss = 0;
-      this.router.navigate(['./home2']);
+      this.navigatePageInput = 0;
+      this.router.navigate(['./home']);
     } else if (nameComponent === 'USER PROFILE') {
-      this.activeClassCss = 1;
-      this.router.navigate(['./home2/userprofit']);
+      this.navigatePageInput = 1;
+      this.router.navigate(['./home/userprofit']);
     } else if (nameComponent === 'GALLERY') {
-      this.activeClassCss = 2;
+      this.navigatePageInput = 2;
     } else if (nameComponent === 'USER ONLINE') {
-      this.activeClassCss = 3;
+      this.navigatePageInput = 3;
     } else if (nameComponent === 'MESSAGER') {
-      this.activeClassCss = 4;
+      this.navigatePageInput = 4;
     } else if (nameComponent === 'MAPS') {
-      this.activeClassCss = 5;
+      this.navigatePageInput = 5;
     } else {
-      this.activeClassCss = 6;
+      this.navigatePageInput = 6;
     }
     this.componentName.emit(nameComponent);
   }
+
 }

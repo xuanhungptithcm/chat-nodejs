@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     const login = this.localstoage.get('x');
     if (login) {
-      this.router.navigate(['./home2']);
+      this.router.navigate(['./home']);
     }
   }
 }

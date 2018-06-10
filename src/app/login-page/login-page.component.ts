@@ -42,7 +42,7 @@ export class LoginPageComponent implements OnInit {
         this.toastr.error(response.message);
       } else {
         this.localstoage.add('x', response.token);
-        this.router.navigate(['/home2']);
+        this.router.navigate(['/home']);
       }
     });
   }

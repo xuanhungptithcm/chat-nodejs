@@ -41,7 +41,7 @@ export class UserprofitComponent implements OnInit {
       .subscribe(response => {
         if (response) {
           console.log(response);
-          this.router.navigate(['./home2']);
+          this.router.navigate(['./home']);
         }
       });
   }

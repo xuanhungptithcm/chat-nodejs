@@ -81,7 +81,7 @@ export class RegisterPageComponent implements OnInit {
         this.toastr.error(response.message, 'Opp!');
       } else {
         this.localstoage.set('x', response.token);
-        this.router.navigate(['/home2']);
+        this.router.navigate(['/home']);
       }
     });
   }

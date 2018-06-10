@@ -16,11 +16,11 @@
     .content{
         padding: 0 15px;
         width: 100%;
-        height: 82vh;
+        height: 84vh;
         .element-content{
             height: 52px;
             border-radius: 3px;
-            margin: 5px;
+            margin-top: 15px;
             display: flex;
             cursor: pointer;
             .role-name{
@@ -48,22 +48,23 @@
         
     }
     .footer-menu{
-        height: 8vh;
+        height: 6vh;
+        background-color: rgba(169, 140, 220, 0.671);
         cursor: pointer;
         .logout{
-            height: 8vh;
             text-align: center;
-            background-color: rgba(169, 140, 220, 0.671);
-            display: flex;
             .text{
-                flex: 1;
                 p{
-                font-size: 20px;
-                color: white;
-                margin-top: 20px;
+                    margin-top: -30px;
+                    padding-top: 2vh;
+                    font-size: 2vh;
+                    color: white;
                 }
             }
         }
+    }
+    .footer-menu:hover{
+        background-color: #411465;
     }
 }
 @media only screen and (max-width: 992px) {

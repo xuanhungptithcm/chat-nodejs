@@ -1,3 +1,4 @@
+import { SubjectService } from './share/service/subject.service';
 import { LoginService } from './share/service/login.service';
 import { TokenService } from './share/service/token.service';
 import { LocalStorageModule } from 'angular-2-local-storage';
@@ -14,12 +15,7 @@ import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
 import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
-import { HomePageComponent } from './home-page/home-page.component';
-import { SearchContentElementComponent } from './home-page/search-content-element/search-content-element.component';
-import { SearchElementComponent } from './home-page/search-element/search-element.component';
-import { NotificationElementComponent } from './home-page/notification-element/notification-element.component';
 import { SocketService } from './share/service/socket.service';
-import { PersonalComponent } from './home-page/personal/personal.component';
 import { routing } from './routing.config';
 import { HallPageComponent } from './hall-page/hall-page.component';
 import { MenubarComponent } from './hall-page/menubar/menubar.component';
@@ -35,11 +31,6 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     AppComponent,
     LoginPageComponent,
     RegisterPageComponent,
-    HomePageComponent,
-    SearchContentElementComponent,
-    SearchElementComponent,
-    NotificationElementComponent,
-    PersonalComponent,
     HallPageComponent,
     MenubarComponent,
     UserprofitComponent,
@@ -62,7 +53,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   providers: [{
     provide: PERFECT_SCROLLBAR_CONFIG,
     useValue: DEFAULT_PERFECT_SCROLLBAR_CONFIG
-  }, IuserService, TokenService, LoginService, SocketService],
+  }, IuserService, TokenService, LoginService, SocketService, SubjectService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

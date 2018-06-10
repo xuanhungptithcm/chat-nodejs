@@ -58,4 +58,13 @@ export class IuserService {
       });
     });
   }
+
+  searchUserArray(searchName: string): Observable<any> {
+    const url = Configs.USER.searchUser;
+    return this.http.post(url, { textSearch: searchName })
+      .map(response => {
+        console.log(response);
+        return response.json();
+      });
+  }
 }

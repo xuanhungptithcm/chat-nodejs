@@ -10,4 +10,5 @@ export class Iuser {
     slogan?: string;
     company?: string;
     city?: string;
+    fullname?: string;
 }

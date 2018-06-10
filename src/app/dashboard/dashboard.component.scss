@@ -1,6 +1,6 @@
 .user-profit-layout{
     padding: 0 0 15px 15px;
-    height: 90vh;
+    // height: 90vh;
     width: 100%;
     display: flex;
     display: inline-block;
@@ -40,7 +40,7 @@
                 img{
                     z-index: 1;
                     border-radius: 100%;
-                    margin-top: -7px;
+                    margin-top: -6px;
                     margin-left: -5px;
                     width: 15vh;
                     height: 15vh;
@@ -54,16 +54,8 @@
                 color: rgba(0, 0, 255, 0.671);
             }
         }
-        .username{
+        .action{
             text-align: center;
-            margin: 15px auto 25px auto;
-        }
-        .slogan{
-            margin: auto;
-            text-align: center;
-            padding-bottom: 45px;
-            width: 73%;
-            border-bottom: 1px solid rgba(128, 128, 128, 0.205);
         }
     }
 
@@ -78,11 +70,16 @@
         }
         .information-image{
             .row1{
+                height: 20vh;
                 .col-md-5{
                     .thumbnail{
                         width: 12vh;
                         height: 12vh;
                         margin-left: calc(50% - 6vh);
+                    }
+                    img{
+                        margin-top: -7px;
+                        margin-left: -10px;
                     }
                 }
             }

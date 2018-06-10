@@ -1,237 +1,27 @@
-<div class="user-profit-layout">
-    <div class="col-md-3">
+<perfect-scrollbar class="scroll-container" fxFlex="auto" style="max-height: calc(90vh - 15px);">
+  <div *ngIf="userArray" class="user-profit-layout">
+    <div class="col-md-3" *ngFor="let item of userArray">
       <div class="information-image">
         <div class="row1">
           <div class="col-md-5">
             <a class="thumbnail">
               <label for="upload-photo">
-                <img src="../../assets/khanh.jpg" alt="...">
+                <img [src]="item.image" alt="...">
               </label>
-              <input type="file" name="photo" id="upload-photo" /> 
-              <!-- (change)="changeProfit($event)" -->
             </a>
           </div>
         </div>
         <div class="name">
-          <p>Pham Huynh Khanh</p>
+          <p>{{item.fullname}}</p>
         </div>
-        <div class="username">
-          <p>phamhuynhkhanh@gmail.com</p>
-        </div>
-        <div class="slogan">
-          <p>"Lắng nghe, Phân tích, Phát ngôn"</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="information-image">
-        <div class="row1">
-          <div class="col-md-5">
-            <a class="thumbnail">
-              <label for="upload-photo">
-                <img src="../../assets/khanh.jpg" alt="...">
-              </label>
-              <input type="file" name="photo" id="upload-photo" />
-            </a>
-          </div>
-        </div>
-        <div class="name">
-          <p>Pham Huynh Khanh</p>
-        </div>
-        <div class="username">
-          <p>phamhuynhkhanh@gmail.com</p>
-        </div>
-        <div class="slogan">
-          <p>"Lắng nghe, Phân tích, Phát ngôn"</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="information-image">
-        <div class="row1">
-          <div class="col-md-5">
-            <a class="thumbnail">
-              <label for="upload-photo">
-                <img src="../../assets/khanh.jpg" alt="...">
-              </label>
-              <input type="file" name="photo" id="upload-photo" />
-            </a>
-          </div>
-        </div>
-        <div class="name">
-          <p>Pham Huynh Khanh</p>
-        </div>
-        <div class="username">
-          <p>phamhuynhkhanh@gmail.com</p>
-        </div>
-        <div class="slogan">
-          <p>"Lắng nghe, Phân tích, Phát ngôn"</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="information-image">
-        <div class="row1">
-          <div class="col-md-5">
-            <a class="thumbnail">
-              <label for="upload-photo">
-                <img src="../../assets/khanh.jpg" alt="...">
-              </label>
-              <input type="file" name="photo" id="upload-photo"/>
-            </a>
-          </div>
-        </div>
-        <div class="name">
-          <p>Pham Huynh Khanh</p>
-        </div>
-        <div class="username">
-          <p>phamhuynhkhanh@gmail.com</p>
-        </div>
-        <div class="slogan">
-          <p>"Lắng nghe, Phân tích, Phát ngôn"</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="information-image">
-        <div class="row1">
-          <div class="col-md-5">
-            <a class="thumbnail">
-              <label for="upload-photo">
-                <img src="../../assets/khanh.jpg" alt="...">
-              </label>
-              <input type="file" name="photo" id="upload-photo" />
-            </a>
-          </div>
-        </div>
-        <div class="name">
-          <p>Pham Huynh Khanh</p>
-        </div>
-        <div class="username">
-          <p>phamhuynhkhanh@gmail.com</p>
-        </div>
-        <div class="slogan">
-          <p>"Lắng nghe, Phân tích, Phát ngôn"</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="information-image">
-        <div class="row1">
-          <div class="col-md-5">
-            <a class="thumbnail">
-              <label for="upload-photo">
-                <img src="../../assets/khanh.jpg" alt="...">
-              </label>
-              <input type="file" name="photo" id="upload-photo"/>
-            </a>
-          </div>
-        </div>
-        <div class="name">
-          <p>Pham Huynh Khanh</p>
-        </div>
-        <div class="username">
-          <p>phamhuynhkhanh@gmail.com</p>
-        </div>
-        <div class="slogan">
-          <p>"Lắng nghe, Phân tích, Phát ngôn"</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="information-image">
-        <div class="row1">
-          <div class="col-md-5">
-            <a class="thumbnail">
-              <label for="upload-photo">
-                <img src="../../assets/khanh.jpg" alt="...">
-              </label>
-              <input type="file" name="photo" id="upload-photo" />
-            </a>
-          </div>
-        </div>
-        <div class="name">
-          <p>Pham Huynh Khanh</p>
-        </div>
-        <div class="username">
-          <p>phamhuynhkhanh@gmail.com</p>
-        </div>
-        <div class="slogan">
-          <p>"Lắng nghe, Phân tích, Phát ngôn"</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="information-image">
-        <div class="row1">
-          <div class="col-md-5">
-            <a class="thumbnail">
-              <label for="upload-photo">
-                <img src="../../assets/khanh.jpg" alt="...">
-              </label>
-              <input type="file" name="photo" id="upload-photo" />
-            </a>
-          </div>
-        </div>
-        <div class="name">
-          <p>Pham Huynh Khanh</p>
-        </div>
-        <div class="username">
-          <p>phamhuynhkhanh@gmail.com</p>
-        </div>
-        <div class="slogan">
-          <p>"Lắng nghe, Phân tích, Phát ngôn"</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="information-image">
-        <div class="row1">
-          <div class="col-md-5">
-            <a class="thumbnail">
-              <label for="upload-photo">
-                <img src="../../assets/khanh.jpg" alt="...">
-              </label>
-              <input type="file" name="photo" id="upload-photo"/>
-            </a>
-          </div>
-        </div>
-        <div class="name">
-          <p>Pham Huynh Khanh</p>
-        </div>
-        <div class="username">
-          <p>phamhuynhkhanh@gmail.com</p>
-        </div>
-        <div class="slogan">
-          <p>"Lắng nghe, Phân tích, Phát ngôn"</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="information-image">
-        <div class="row1">
-          <div class="col-md-5">
-            <a class="thumbnail">
-              <label for="upload-photo">
-                <img src="../../assets/khanh.jpg" alt="...">
-              </label>
-              <input type="file" name="photo" id="upload-photo" />
-            </a>
-          </div>
-        </div>
-        <div class="name">
-          <p>Pham Huynh Khanh</p>
-        </div>
-        <div class="username">
-          <p>phamhuynhkhanh@gmail.com</p>
-        </div>
-        <div class="slogan">
-          <p>"Lắng nghe, Phân tích, Phát ngôn"</p>
+        <div class="action">
+          <button type="button" (click)="makeFriend(item._id)" class="btn btn-success">Kết bạn</button>
+          <button type="button" class="btn btn-danger">Hủy Kết bạn</button>
         </div>
       </div>
     </div>
     <div class="clear">
 
     </div>
-
-</div>
+  </div>
+</perfect-scrollbar>

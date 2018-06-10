@@ -1,28 +1,29 @@
 <div class="layout">
   <div class="menubar">
     <div class="content-menu-bar">
-      <app-menubar (componentName)="getNameComponent($event)"></app-menubar>
+      <app-menubar [navigatePageInput]="navigatePage" (componentName)="getNameComponent($event)"></app-menubar>
     </div>
   </div>
   <div class="routerComponent">
-    <perfect-scrollbar class="scroll-container" fxFlex="auto" style="max-height: 100vh;">
       <div class="navbar-header">
         <div class="navarbar-content">
           <div class="name">{{nameComponent}}</div>
           <div class="search">
-            <input type="search" placeholder="search">
+            <input type="search" placeholder="search" [(ngModel)]="keySearch"
+            (keyup)="searchHandle($event)"
+            (search)="searchHandle($event)"
+            >
             <div class="icon-search">
               <img src="../../assets/search.png" alt="">
             </div>
           </div>
-          <div class="role-name">
+          <!-- <div class="role-name">
             <div class="detail-role-name" (click)="logout()">
               <p>LOGOUT</p>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
       <router-outlet></router-outlet>
-    </perfect-scrollbar>
   </div>
 </div>
