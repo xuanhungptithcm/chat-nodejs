@@ -1,0 +1,69 @@
+.layout{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    .menubar{
+        flex: 1;
+        overflow: hidden;
+        background-image: url('https://i.pinimg.com/originals/4b/38/f7/4b38f7fb504644627478e87764c85f9d.jpg');
+        .content-menu-bar{
+            z-index: 99;
+            background-color: rgba(96, 4, 150, 0.514);
+            height: 100vh;
+        }
+    }
+    .routerComponent{
+        flex: 4.2;
+        background-color: #F7F7F8;
+        height: 100vh;
+        .scroll-container{
+            .navbar-header{
+                width: 100%;
+                height: 10vh;
+                background-color: #FFFFFF;
+                border-bottom: 1px solid rgba(128, 128, 128, 0.205);
+                .navarbar-content{
+                    display: flex;
+                    flex-direction: row;
+                    .name{
+                        margin-top: 23px;
+                        margin-left: 30px;
+                        flex: 1;
+                    }
+                    .search{
+                        margin-top: 14px;
+                        flex: 5;
+                        display: flex; 
+                        input{
+                            width: 70%;
+                            height: 30px;
+                            border-radius: 8px;
+                        }
+                        img{
+                            margin-left: 12px;
+                        }
+                    }
+                    .role-name{
+                        margin-top: 15px;
+                        flex: 2;
+                        .detail-role-name{
+                            width: 75.5px;
+                            height: 36px;
+                            float: right;
+                            margin-right: 30px;
+                            text-align: center;
+                            border-radius: 5px;
+                            cursor: pointer;
+                            p{
+                                margin-top: 10px;
+                            }
+                        }
+                        .detail-role-name:hover{
+                            background-color: rgba(128, 128, 128, 0.397);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

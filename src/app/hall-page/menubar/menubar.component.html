@@ -1,0 +1,72 @@
+<div class="layout-menu">
+  <div class="header-logo">
+    <div class="logo">
+      <img class="align-middle" src="https://laptrinhvien.io/wp-content/themes/Training/asset/img/logo-white.png" alt="">
+    </div>
+  </div>
+  <div class="content">
+    <div class="element-content" [ngClass]="{active: activeClassCss === 0}" (click)="changeComponent('DASHBOARD')">
+      <div class="icon">
+        <img src="./../../../assets/pie-chart.png" alt="">
+      </div>
+      <div class="role-name">
+        <p>DASHBOARD</p>
+      </div>
+    </div>
+    <div class="element-content" [ngClass]="{active: activeClassCss === 1}" (click)="changeComponent('USER PROFILE')">
+      <div class="icon">
+        <img src="./../../../assets/user.png" alt="">
+      </div>
+      <div class="role-name">
+        <p>USER PROFILE</p>
+      </div>
+    </div>
+    <div class="element-content" [ngClass]="{active: activeClassCss === 2}" (click)="changeComponent('GALLERY')">
+      <div class="icon">
+        <img src="./../../../assets/image-gallery.png" alt="">
+      </div>
+      <div class="role-name">
+        <p>GALLERY</p>
+      </div>
+    </div>
+    <div class="element-content" [ngClass]="{active: activeClassCss === 3}" (click)="changeComponent('USER ONLINE')">
+      <div class="icon">
+        <img src="./../../../assets/teamwork.png" alt="">
+      </div>
+      <div class="role-name">
+        <p>USER ONLINE</p>
+      </div>
+    </div>
+    <div class="element-content" [ngClass]="{active: activeClassCss === 4}" (click)="changeComponent('MESSAGER')">
+      <div class="icon">
+        <img src="./../../../assets/paper-plane.png" alt="">
+      </div>
+      <div class="role-name">
+        <p>MESSAGER</p>
+      </div>
+    </div>
+    <div class="element-content" [ngClass]="{active: activeClassCss === 5}" (click)="changeComponent('MAPS')">
+      <div class="icon">
+        <img src="./../../../assets/location-pin.png" alt="">
+      </div>
+      <div class="role-name">
+        <p>MAPS</p>
+      </div>
+    </div>
+    <div class="element-content" [ngClass]="{active: activeClassCss === 6}" (click)="changeComponent('NOTIFICATIONS')">
+      <div class="icon">
+        <img src="./../../../assets/ring.png" alt="">
+      </div>
+      <div class="role-name">
+        <p>NOTIFICATIONS</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-menu" (click)="logout()">
+    <div class="logout">
+      <div class="text">
+        <p>LOGOUT</p>
+      </div>
+    </div>
+  </div>
+</div>

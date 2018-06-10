@@ -1,0 +1,125 @@
+.user-profit-layout{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    .information-text{
+        flex: 2;
+        height: 80vh;
+        background-color: white;
+        border: 1px solid rgba(128, 128, 128, 0.589);
+        margin: 5vh 5vh 5vh 5vh;
+        .profile{
+            .card{
+                .card-header{
+                    padding: 15px 15px 0;
+                    background-color: #FFFFFF;
+                    border-bottom: none !important;
+                    h4.card-title{
+                        margin: 0;
+                        color: #333333;
+                        font-weight: 300;
+                        font-size: 22px;
+                        line-height: 30px;
+                    }
+                }
+                .card-body{
+                    padding: 15px 15px 10px 15px;
+                    form{
+                        input{
+                            background-color: #F5F5F5;
+                            color: #888888;
+                            cursor: not-allowed;
+                        }
+                        input.form-control{
+                            border: 1px solid #E3E3E3;
+                            border-radius: 4px;
+                            padding: 8px 12px;
+                            height: 40px;
+                            box-shadow: none;
+                        }
+                        .form-control{
+                            background-color: #FFFFFF;
+                            border: 1px solid #E3E3E3;
+                            border-radius: 4px;
+                            color: #565656;
+                            padding: 8px 12px;
+                            height: 40px;
+                            box-shadow: none;
+                        }
+                        .form-control:disabled{
+                            background-color: #e9ecef;
+                            opacity: 1;
+                        }
+                    }
+                }
+                label{
+                    font-size: 12px;
+                    margin-bottom: 5px;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    color: #9A9A9A;
+                }
+            }
+        }
+    }
+    .information-image{
+        flex: 1;
+        height: 60%;
+        background-color: white;
+        border: 1px solid rgba(128, 128, 128, 0.425);
+        margin: 5vh 5vh 0 0;
+        .row{
+            padding: 0px;
+            text-align: center;
+            .col-md-6{
+                padding: 0px;
+                width: 50%;
+                position: relative;
+                .thumbnail{
+                    border-radius: 100%;
+                    cursor: pointer;
+                    width: 15vh;
+                    height: 15vh;
+                    margin-left: calc(100% - 7.5vh);
+                    margin-top: 15px;
+                    #upload-photo{
+                        opacity: 0;
+                        z-index: 0;
+                        position: absolute;
+                    }
+                }
+                img{
+                    width: 15vh;
+                    height: 15vh;
+                    z-index: 1;
+                    border-radius: 100%;
+                    margin-top: -5px;
+                    margin-left: -5px;
+                }
+            }
+        }
+        .name{
+            text-align: center;
+            margin: 0 auto 15px auto;
+            p{
+                color: rgba(0, 0, 255, 0.671);
+            }
+        }
+        .username{
+            text-align: center;
+            margin: 15px auto 25px auto;
+        }
+        .slogan{
+            margin: auto;
+            text-align: center;
+            padding-bottom: 45px;
+            width: 90%;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.205);
+        }
+    }
+
+}
+#upload-photo{
+    z-index: 0;
+    opacity: 0;
+}

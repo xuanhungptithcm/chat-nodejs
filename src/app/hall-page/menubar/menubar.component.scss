@@ -1,0 +1,102 @@
+.layout-menu{
+    width: 100%;
+    height: 100vh;
+    .header-logo{
+        width: 100%;
+        height: 10vh;
+        border-bottom: 1px solid gainsboro;
+        .logo{
+            height: 10vh;
+            text-align: center;
+            img{
+                height: 5vh;
+            }
+        }
+    }
+    .content{
+        padding: 0 15px;
+        width: 100%;
+        height: 82vh;
+        .element-content{
+            height: 52px;
+            border-radius: 3px;
+            margin: 5px;
+            display: flex;
+            cursor: pointer;
+            .role-name{
+                flex: 2;
+                p{
+                    margin-top: 19px;
+                    color: white;
+                    font-size: 14px;
+                }
+            }
+            .icon{
+                flex: 1;
+                img{
+                    margin-top: 9px;
+                    margin-left: 12px;
+                }
+            }
+        }
+        .element-content:hover { 
+            background-color: rgba(169, 140, 220, 0.671)
+        }
+        .active{
+            background-color: rgba(169, 140, 220, 0.671)
+        }
+        
+    }
+    .footer-menu{
+        height: 8vh;
+        cursor: pointer;
+        .logout{
+            height: 8vh;
+            text-align: center;
+            background-color: rgba(169, 140, 220, 0.671);
+            display: flex;
+            .text{
+                flex: 1;
+                p{
+                font-size: 20px;
+                color: white;
+                margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 992px) {
+   .layout-menu{
+    .content{
+        padding: 0px;
+        .element-content{
+            margin: 15px 0 0 0;
+            display: block;
+            .role-name{
+                p{
+                    display: none;
+                    text-align: center;
+                }
+            }
+            .icon{
+                margin-left: calc(50% - 16px);
+                flex: 1;
+                img{
+                    margin: 0;
+                    padding-top: 10px;
+                }
+            }
+        }
+        .element-content:hover { 
+            .role-name{
+                p{
+                    display: block;
+                    text-align: center;
+                    margin-top: 7px;
+                }
+            }
+        }
+    }
+   }
+}

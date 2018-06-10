@@ -1,0 +1,45 @@
+<form autocomplete="off" class="container form-horizontal" (ngSubmit)="changeInfomationOfPerson()">
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="name">Name:</label>
+    <div class="col-sm-12">
+      <div class="form-inline">
+        <input [(ngModel)]="name" [ngModelOptions]="{standalone: true}" [disabled]="changeElement === 1 ? null: true" type="text" class="form-control col-sm-11" id="name" placeholder="Enter name">
+        <label class="checkbox-inline">
+          <input type="radio" name="changeInfomaion" value="" (click)="changeInformation(1)">Sửa</label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="email">Email:</label>
+    <div class="col-sm-12">
+      <div class="form-inline">
+        <input [(ngModel)]="email" [ngModelOptions]="{standalone: true}" [disabled]="changeElement === 2 ? null: true" type="email" class="form-control col-sm-11" id="email" placeholder="Enter email">
+        <label class="checkbox-inline">
+          <input type="radio" name="changeInfomaion" value="" (click)="changeInformation(2)">Sửa</label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="pwd">Password:</label>
+    <div class="col-sm-12">
+      <div class="form-inline">
+        <input [(ngModel)]="password" [ngModelOptions]="{standalone: true}" [disabled]="changeElement === 3 ? null: true" type="password" class="form-control col-sm-11" id="pwd" placeholder="Enter password">
+        <label class="checkbox-inline">
+          <input checked type="radio" name="changeInfomaion" value="" (click)="changeInformation(3)">Sửa</label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="repwd">Password Again:</label>
+    <div class="col-sm-12">
+      <div class="form-inline">
+        <input [(ngModel)]="repassword" [ngModelOptions]="{standalone: true}" [disabled]="changeElement === 3 ? null: true" type="password" class="form-control col-sm-11" id="repwd" placeholder="Enter password again">
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-12">
+      <button type="submit" class="btn btn-default">Change</button>
+    </div>
+  </div>
+</form>

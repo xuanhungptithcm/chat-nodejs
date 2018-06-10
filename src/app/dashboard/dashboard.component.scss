@@ -1,0 +1,129 @@
+.user-profit-layout{
+    padding: 0 0 15px 15px;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    display: inline-block;
+    .clear{
+        clear: both;
+    }
+    .col-md-3{
+        padding: 0px;
+    }
+    .information-image{
+        display: block;
+        float: left;
+        flex: 1;
+        height:calc(calc(90vh - 15px)/2 - 15px);
+        width: calc(100% - 15px);
+        background-color: white;
+        border: 1px solid rgba(128, 128, 128, 0.425);
+        margin-top: 15px;
+        .row1{
+            .col-md-5{
+                margin-top: 15px;
+                width: 100%;
+                padding: 0px;
+                position: relative;
+                .thumbnail{
+                    border-radius: 100%;
+                    cursor: pointer;
+                    width: 15vh;
+                    height: 15vh;
+                    margin-left: calc(50% - 7.5vh);
+                    #upload-photo{
+                        opacity: 0;
+                        z-index: 0;
+                        position: absolute;
+                    }
+                }
+                img{
+                    z-index: 1;
+                    border-radius: 100%;
+                    margin-top: -7px;
+                    margin-left: -5px;
+                    width: 15vh;
+                    height: 15vh;
+                }
+            }
+        }
+        .name{
+            text-align: center;
+            margin: 0 auto 15px auto;
+            p{
+                color: rgba(0, 0, 255, 0.671);
+            }
+        }
+        .username{
+            text-align: center;
+            margin: 15px auto 25px auto;
+        }
+        .slogan{
+            margin: auto;
+            text-align: center;
+            padding-bottom: 45px;
+            width: 73%;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.205);
+        }
+    }
+
+}
+// responsive mobile
+
+//khi man hinh nho hon 1176px
+@media only screen and (max-width: 1280px) {
+    .user-profit-layout{
+        .col-md-3{
+            width: 33%;
+        }
+        .information-image{
+            .row1{
+                .col-md-5{
+                    .thumbnail{
+                        width: 12vh;
+                        height: 12vh;
+                        margin-left: calc(50% - 6vh);
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 992px) {
+    .user-profit-layout{
+        .col-md-3{
+            float: left;
+            width: 49.5%;
+        }
+        .information-image{
+            .row1{
+                .col-md-5{
+                    .thumbnail{
+                        width: 14vh;
+                        height: 14vh;
+                        margin-left: calc(50% - 7vh);
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 600px) {
+    .user-profit-layout{
+        .col-md-3{
+            float: left;
+            width: 100%;
+        }
+        .information-image{
+            .row1{
+                .col-md-5{
+                    .thumbnail{
+                        width: 14vh;
+                        height: 14vh;
+                        margin-left: calc(50% - 7vh);
+                    }
+                }
+            }
+        }
+    }
+}
