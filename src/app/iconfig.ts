@@ -19,6 +19,7 @@ export const Configs = {
         token: 'https://nodejs-server-chat.herokuapp.com/' + 'api/auth/getuserbytoken',
         update: 'https://nodejs-server-chat.herokuapp.com/' + 'api/user',
         uploadfile: 'https://nodejs-server-chat.herokuapp.com/' + 'api/user/uploadfile',
+        searchUser: 'https://nodejs-server-chat.herokuapp.com/' + 'api/user/searchUser'
     },
     SOCKET: {
         url: 'https://nodejs-server-chat.herokuapp.com'
