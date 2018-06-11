@@ -23,8 +23,8 @@ export class UserprofitComponent implements OnInit {
     this.userService.getUserByToken()
       .subscribe(response => {
         this.user = response;
+        this.profit = this.user.image;
       });
-    this.profit = this.localstorage.get('image');
   }
   updateUser() {
     const request = {
@@ -54,7 +54,6 @@ export class UserprofitComponent implements OnInit {
       this.base64Image = myReader.result;
       this.userService.uploadFile({ image: this.base64Image, name: file.name }).subscribe(response => {
         this.profit = response.url;
-        this.localstorage.set('image', this.profit);
       });
     };
     myReader.readAsDataURL(file);

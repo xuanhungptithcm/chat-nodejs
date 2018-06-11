@@ -3,7 +3,7 @@ export class Iuser {
     firstname?: string;
     email?: string;
     password?: string;
-    img?: string;
+    image?: string;
     lastname?: string;
     country?: string;
     address?: string;
