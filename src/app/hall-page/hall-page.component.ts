@@ -50,6 +50,7 @@ export class HallPageComponent implements OnInit, OnDestroy {
 
   logout() {
     this.localstorage.remove('x');
+    this.localstorage.remove('image');
     this.router.navigate(['./']);
   }
 

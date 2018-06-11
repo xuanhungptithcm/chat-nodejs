@@ -18,7 +18,6 @@ export class MenubarComponent implements OnInit {
 
   logout() {
     this.localstorage.remove('x');
-    this.localstorage.remove('image');
     this.router.navigate(['./']);
   }
 
